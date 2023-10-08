@@ -1,27 +1,26 @@
-# UsenseTestTask
+# Angular Password Strength Meter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+A simple password strength meter built using Angular that provides real-time feedback on the strength of a password as it is being entered. The meter evaluates password strength based on certain criteria and changes the color of sections to indicate the strength level.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Real-time password strength evaluation.
+- Password strength is categorized into three levels: Easy, Medium, and Strong.
+- Color-coded sections to visually represent password strength.
+- Provides feedback even when the password field is empty.
 
-## Code scaffolding
+## Password Strength Criteria
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The password strength is evaluated based on the following criteria:
 
-## Build
+- **Easy**: Password contains only letters, digits, or symbols.
+- **Medium**: Password is a combination of letters and symbols, letters and digits, or digits and symbols.
+- **Strong**: Password contains a combination of letters, symbols, and numbers.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Color Indicators
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Empty Field**: All sections are gray.
+- **Less than 8 Characters**: All sections are red.
+- **Easy Password**: The first section is red, the rest are gray.
+- **Medium Password**: The first two sections are yellow, the last one is gray.
+- **Strong Password**: All sections are green.
