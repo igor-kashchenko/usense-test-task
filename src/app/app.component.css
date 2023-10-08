@@ -1,0 +1,39 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sections-container {
+  display: flex;
+  margin-top: 16px;
+}
+
+.section {
+  width: 60px;
+  height: 30px;
+  background-color: grey;
+  margin-right: 8px;
+}
+
+.section:last-child {
+  margin-right: 0;
+}
+
+.invalid {
+  background-color: red;
+}
+
+.easy:first-child {
+  background-color: red;
+}
+
+.medium:nth-of-type(-n+2) {
+  background-color: yellow;
+}
+
+.strong {
+  background-color: green;
+}
