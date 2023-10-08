@@ -1,5 +1,7 @@
 # Angular Password Strength Meter
 
+[DEMO](https://usense-test-task-le6g1ge7q-igor-kashchenko.vercel.app/)
+
 A simple password strength meter built using Angular that provides real-time feedback on the strength of a password as it is being entered. The meter evaluates password strength based on certain criteria and changes the color of sections to indicate the strength level.
 
 ## Features
